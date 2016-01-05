@@ -1,0 +1,3 @@
+rm *.o test
+mpicxx -c -Debug -Wall -Wcheck -traceback -g *.cpp -I /home/tangjz/Soft/fftw3.3.3-double/include/
+mpicxx *.o -o test -L /home/tangjz/Soft/fftw3.3.3-double/lib/ -lfftw3_mpi -lfftw3 -lm
